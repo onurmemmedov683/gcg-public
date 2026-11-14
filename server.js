@@ -8,6 +8,6 @@ app.get('/', (req, res) => {
     res.json({ status: "success", message: "Grand Crime Gangster topluluk sunucusu aktif!" });
 });
 
-app.listen(PORT, () => {
+app.listen(PORT, '0.0.0.0', () => {
     console.log(`Sunucu ${PORT} portunda çalışıyor.`);
 });
